@@ -52,14 +52,6 @@ exports.getVehiculoById = async (req, res) => {
 // Crear vehículo
 exports.createVehiculo = async (req, res) => {
   try {
-    const { Vehi_Placa, Marc_Id, Vehi_Modelo } = req.body;
-
-    if (!Vehi_Placa || !Vehi_Modelo) {
-      return res.status(400).json({
-        ok: false,
-        msg: 'Placa y modelo son obligatorios'
-      });
-    }
 
     const nuevoVehiculo = await Vehiculo.create(req.body);
 

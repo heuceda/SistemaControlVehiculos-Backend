@@ -1,7 +1,8 @@
+const dotenv = require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const sequelize = require('./config/db');
-const vehiculoRoutes = require('./routes/vehiculo');
+const sequelize = require('./src/database/config');
+const vehiculoRoutes = require('./src/routes/vehiculo');
 
 const app = express();
 app.use(cors()); // Pemite las peticiones desde el frontend, React

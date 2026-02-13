@@ -4,8 +4,7 @@ const sequelize = require('../database/config');
 const Vehiculo = sequelize.define('Gral_Vehiculos', {
   Vehi_Id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   Vehi_Placa: { type: DataTypes.STRING, allowNull: false, unique: true },
-  Marc_Id: { type: DataTypes.INTEGER},
-  Vehi_Modelo: { type: DataTypes.STRING, allowNull: false },
+  Mode_Id: { type: DataTypes.INTEGER},
 
   // Campos de auditoría 
   Usua_Creacion: { type: DataTypes.INTEGER },
