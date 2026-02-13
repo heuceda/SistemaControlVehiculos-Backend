@@ -8,10 +8,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.2.4",
-    "express": "^5.2.1"
-  }
+    "express": "^5.2.1",
+    "mysql2": "^3.17.0",
+    "sequelize": "^6.37.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heuceda/SistemaControlVehiculos-Backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heuceda/SistemaControlVehiculos-Backend/issues"
+  },
+  "homepage": "https://github.com/heuceda/SistemaControlVehiculos-Backend#readme",
+  "description": ""
 }
